@@ -1,6 +1,9 @@
+// PAGE === BACKGROUND
+.page {
+    background-color:#fff;
+}
 // CONTAINER === BODY
 .container {
-    background-color: #FF957E;
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
@@ -12,12 +15,15 @@
 
 .content {
     flex-grow: 1;
-    background-color: beige;
+    background-color: white;
+    border: 3px solid #4F5D75;
+    padding: 20px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 961px) {
     .container {
-        background-color: #7EE2FF;
-        max-width: 750px;
+        background-color: white;
+        max-width: 60%;
   }
 }

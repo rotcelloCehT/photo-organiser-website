@@ -6,13 +6,15 @@ import layoutStyles from './layout.module.scss'
 
 function Layout(props){ // props is what's inside the layout tags.
     return(
-        <div className={layoutStyles.container}>
-             {/* USE CAMEL CASE IN JS FILE TO REFERENCE SCSS WITH "-" */}
-            <div className={layoutStyles.content}> 
-                <Header />
-                {props.children}
+        <div className={layoutStyles.page}>
+            <Header />
+            <div className={layoutStyles.container}>
+                {/* USE CAMEL CASE IN JS FILE TO REFERENCE SCSS WITH "-" */}
+                <div className={layoutStyles.content}> 
+                    {props.children}
+                </div>
+                <Footer />
             </div>
-            <Footer />
         </div>
         
     )

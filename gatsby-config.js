@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Full Stack Bootcamp!', 
+        title: 'FOLDERGENIC', 
         author: 'Anthony Radin'
     },
     plugins: [

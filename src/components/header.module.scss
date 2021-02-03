@@ -1,11 +1,11 @@
 .header {
     padding: 1rem 0 3rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    margin-top: 10px;
 }
 .title {
+    width: 100px;
     color: black;
     font-size: 3rem;
     text-decoration: none;
@@ -17,7 +17,8 @@
 //naming convention with "-" but in JS file use cammel case
 .nav-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    // justify-content: space-around;
     list-style-type: none;
     margin: 0;
 
@@ -38,9 +39,26 @@
 .active-nav-item{
     color: #333333;
 }
-
+// --------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
+// FIGURE OUT HOW TO GET THE HEADER ALIGNED HORIZONTALLY ON DESKTOP.
+// --------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
 @media only screen and (min-width: 961px) {
     .header {
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
   }
+//   camel case in js file but - in css file. reminder
+    .nav-block{
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        border: 2px solid red;
+
+    }
+    .nav-list{
+        justify-content: flex-end;
+    }
 }
