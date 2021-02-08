@@ -27,7 +27,9 @@ function Header(){
     return(
         <header className={headerStyle.header}>
             <nav className={headerStyle.navBlock}>
-                <h1><Link className={headerStyle.title} activeClassName={headerStyle.activeNavItem} to="/">{data.site.siteMetadata.title}</Link></h1>
+                <div className={headerStyle.title}>
+                    <h1><Link activeClassName={headerStyle.activeNavItem} to="/">{data.site.siteMetadata.title}</Link></h1>
+                </div>
                 <ul className={headerStyle.navList}>
                     <li><Link className={headerStyle.navItem} activeClassName={headerStyle.activeNavItem} to="/">Home</Link></li>
                     <li><Link className={headerStyle.navItem} activeClassName={headerStyle.activeNavItem} to="/blog">Blog</Link></li>

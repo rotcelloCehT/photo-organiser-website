@@ -1,23 +1,28 @@
-.header {
-    padding: 1rem 0 3rem;
+.nav-block {
+    padding: 0rem 0 3rem 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 .title {
-    width: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
     color: black;
-    font-size: 3rem;
+    // font-size: 2rem;
     text-decoration: none;
-    background-image: linear-gradient(90deg,#663399,#bc027f,#f67300);
+    background-image: linear-gradient(11deg,#40407a,#34ace0,#f7f1e3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 //naming convention with "-" but in JS file use cammel case
 .nav-list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     // justify-content: space-around;
     list-style-type: none;
     margin: 0;
@@ -27,7 +32,6 @@
 .nav-item {
     color: #999999;
     font-size: .9rem;
-    margin-right: 1.3rem;
     text-decoration: none;
 
 } 
@@ -48,17 +52,35 @@
     .header {
         align-items: center;
         justify-content: center;
-        height: 200px;
   }
 //   camel case in js file but - in css file. reminder
     .nav-block{
         width: 100%;
-        flex-direction: row;
         align-items: flex-start;
-        border: 2px solid red;
+        
 
     }
+
+    .title {
+        height: 100px;
+        width: 20%;
+        // added margin to preserve effect of fade.
+        margin-right: 30%;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+    .nav-item {
+        margin-left: 1.3rem;
+        padding-right: 30px;
+    }
+
     .nav-list{
+        height: 100px;
+        width: 50%;
         justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
     }
 }
