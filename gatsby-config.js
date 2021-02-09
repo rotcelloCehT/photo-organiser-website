@@ -4,7 +4,9 @@ module.exports = {
         author: 'Anthony Radin'
     },
     plugins: [
-        `gatsby-plugin-fontawesome-css`,
+        'gatsby-plugin-styled-components',
+        'gatsby-transformer-sharp', 
+        'gatsby-plugin-sharp',
         'gatsby-plugin-react-helmet',
         { // set up as object {} to add options
             resolve: 'gatsby-source-contentful',

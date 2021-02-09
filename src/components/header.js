@@ -5,7 +5,6 @@ import { Link, graphql, useStaticQuery} from 'gatsby'
 // headerStyle is object with property link
 import headerStyle from './header.module.scss' // deafult export "headerStyle" contains props for every class defined in module
 
-
 function Header(){
     // call useStaticQuery as Function
     // graphql is function
