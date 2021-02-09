@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery} from 'gatsby'
-//import './header.scss'//importing style sheet into header bleeds onto other components
+//import './header.scss'
+//importing style sheet into header bleeds onto other components
 // headerStyle is object with property link
 import headerStyle from './header.module.scss' // deafult export "headerStyle" contains props for every class defined in module
 

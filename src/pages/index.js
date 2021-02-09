@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'gatsby'
 import Layout from '../components/layout' // (../) means go up one directory
 import Head from '../components/head'
-
+import "../styles/index.scss"
 
 function IndexPage(){
   return(

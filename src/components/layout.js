@@ -1,7 +1,6 @@
 import React from 'react'
 import Footer from '../components/footer' // (../) means go up one directory
 import Header from '../components/header' // (../) means go up one directory
-import "../styles/index.scss"
 import layoutStyles from './layout.module.scss'
 
 function Layout(props){ // props is what's inside the layout tags.
