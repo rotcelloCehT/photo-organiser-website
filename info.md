@@ -18,3 +18,13 @@ foldergenic.com
 ## FONTS
 
 "Modern Era", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, Arial
+
+## COLORS
+
+655D83
+
+F4D1AE
+
+F6A957
+
+65E6BB
