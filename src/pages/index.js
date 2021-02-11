@@ -8,10 +8,80 @@ function IndexPage(){
   return(
     <Layout>
       <Head title="Home"/>
-      <h1>Hello,</h1>
-      <h2>I'm Tony, a full stack-developer living in Toronto.</h2>
-      {/* Use link instead of <a> to preload and make faster */}
-      <p>Need a developer? <Link to="/contact">Contact me.</Link></p>
+      <div className="background">
+        <div className="overlay">
+          <div className="block">
+              {/* <div className="title">
+                <h1>Volto Organiser</h1>
+              </div>
+              <div className="intro">
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+              </div> */}
+              <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+                <p>
+                  Volto Organiser allows you to easily organise your photos into folders
+                  with the click of a button. Simply connect the external storage device and click
+                  organise.
+                </p>
+              <div className="clicks">
+                <button className="downloadButton">
+                  <div></div>
+                </button>
+                <button id="learn-button">
+                  <div></div>
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

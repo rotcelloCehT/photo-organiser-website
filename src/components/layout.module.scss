@@ -6,24 +6,23 @@
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
-
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .content {
     flex-grow: 1;
     background-color: white;
-    border: 3px solid #4F5D75;
-    padding: 50px;
+    border: 1px solid #4F5D75;
+    // MATCHES WITH THE HEIGHT OF THE HEADER IN INDEX.JS
+    min-height: 70vh;
     width: 100%;
 }
 
 @media only screen and (min-width: 961px) {
     .container {
         background-color: white;
-        max-width: 60%;
+        max-width: 100%;
   }
 }
