@@ -24,21 +24,24 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100%;
+  height: auto;
 
   // background-image: url("https://images.unsplash.com/photo-1559617350-6eee0f8b702a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
-  background-color: #655D83; /* Used if the image is unavailable */
+  // background-color: #655D83; /* Used if the image is unavailable */
+  // background-color: #fff;
+  background-image: linear-gradient(180deg,#9f9fe2,#d6f3ff,#f7f1e3);
+  background-size: 80%;
+
   // background-position: center top; /* Center the image */
   // background-repeat: no-repeat; /* Do not repeat the image */
   // background-size: cover; /* Resize the background image to cover the entire container */
 
-  position: relative;
-
+  z-index: 4;
 }
 
 .overlay {
   border: 2px dotted black;
-  background-color: rgba(40, 40, 40, 0.2);
+  // background-color: rgba(40, 40, 40, 0.2);
 
   width: 100%;
   height: 100%;
@@ -49,14 +52,23 @@ body {
   height: 100%;
 
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
   padding: 10px;
+  position: relative;
 }
 
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+// TITLE SECTION
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+//      NOTES: percentage (%) used for height of the background but vh used for master container. Layout.css .content{} has 
+//      no minimum height so % scales but on phone, vh sets height of containers.
 .title{
-  // background-color: #fff;
+  // border: 3px solid orange;
   width: 100%;
-  height: 20%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -65,12 +77,13 @@ body {
 }
 
 .title h1 {
+    
     color: black;
-    font-size: 2.5rem;
-    text-decoration: none;
-    background-image: linear-gradient(11deg,#40407a,#34ace0,#f7f1e3);
+    font-size: 2.7rem;
+    // background-image: linear-gradient(90deg,#40407a,#34ace0,#f7f1e3);
     background-image: url("https://images.unsplash.com/photo-1559617350-6eee0f8b702a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
-    background-position: right bottom; /* Center the image */
+    background-image: url("https://images.unsplash.com/photo-1545053273-1412db0876fe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwcHVycGxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-position: top; /* Center the image */
     background-repeat: no-repeat;
     background-size: 100%;
     
@@ -78,55 +91,76 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+// INTRO SECTION
+// //////////////////////////////////////////////////////////////////////////////////////////////////
 .intro {
+  // border: 3px solid orange;
   display: flex;
-  justify-content: center;
   text-align: center;
   align-items: flex-start;
+  margin-top: 20px;
+  height: 200px;
 
   font-size: 1.2rem;
   color: black;
   text-decoration: none;
-  background-image: linear-gradient(11deg,#40407a,#34ace0,#f7f1e3);
-  background-image: url("https://images.unsplash.com/photo-1559617350-6eee0f8b702a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
-  background-position: right bottom; /* Center the image */
-  background-repeat: no-repeat;
+  // background-image: linear-gradient(50deg,#000000,#4c7568,#000000);
+  // background-image: url("https://images.unsplash.com/photo-1559617350-6eee0f8b702a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+  // background-position: right bottom; /* Center the image */
+  // background-repeat: no-repeat;
     
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
 
-  height: 30%;
-  padding-top: 5%;
 }
 
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+// BUTTONS SECTION
+// //////////////////////////////////////////////////////////////////////////////////////////////////
 .clicks {
   display: flex;
-  height: 250px;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
+  height: 200px;
+  justify-content: center;
   align-items: center;
 
-  background-color: rgba(256, 256, 256, 0.1);
+  // background-color: rgba(256, 256, 256, 0.1);
 }
 
-button
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+// BUTTONS
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+.header-button {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.header-button button
 {
-    top: 50%;
     right: 0;
     left: 0;
-    display: block;
-    width: 240px;
-    padding: 40px;
+    display: flex;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     border: 0;
     cursor: pointer;
     border-radius: 2px;
-    transform: translateY(-50%);
-    box-shadow: 0 10px 20px -5px #94a6af;
+    transform: translateY(0%);
+    box-shadow: 0 10px 20px -5px #C5C1D3;
     overflow: hidden;
+
 }
 
-button:before, button:after
+.header-button button:before, .header-button button:after
 {
     content: "";
     position: absolute;
@@ -136,27 +170,25 @@ button:before, button:after
     left: 0;
 }
 
-button:before
+.header-button button:before
 {
     transform: scale(1);
-    background-image: url('https://himalayasingh.github.io/button-hover-effect-1/img/bg.jpg');
+    background-image: url('https://images.unsplash.com/photo-1545053273-1412db0876fe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8c2t5JTIwcHVycGxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
     background-size: cover;
+    background-position: center;
+    // filter: blur(1px);
     transition: 0.3s ease transform;
     z-index: 1;
 }
 
-.download-button:before {
-  // background-image: url('https://images.unsplash.com/photo-1579792773782-79ddd1c4e6c1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8cHVycGxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
-}
-
-button:after
+.header-button button:after
 {
     background-color: #000;
     opacity: 0.16;
     z-index: 2;
 }
 
-button div
+.header-button button div
 {
     position: absolute;
     top: 0;
@@ -166,65 +198,178 @@ button div
     z-index: 3;
 }
 
-button div:before, button div:after
+.header-button button div:before, .header-button button div:after
 {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     color: #fff;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     line-height: 1;
     text-align: center;
-    padding: 25px 0;
+    padding: 15px 0px;
     transition: 0.3s ease all;
 }
 
-button div:before
+.header-button button div:before
 {
-    content: "HOVER";
+    content: "DOWNLOAD";
     letter-spacing: 0;
     opacity: 1;
     transform: scale(1);
 }
 
-button div:after
+.header-button button div:after
 {
-    content: "YEAH !";
-    letter-spacing: -10px;
+    content: "IT'S FREE!";
     transform: scale(0);
     opacity: 0;
 }
 
-button:hover:before
+.header-button button:hover:before
 {
     transform: scale(1.3);
+    // background-image: url('https://images.unsplash.com/photo-1436262513933-a0b06755c784?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80');
+    filter: none;
 }
 
-button:hover div:before
+.header-button button:hover div:before
 {
     letter-spacing: 3px;
     opacity: 0;
     transform: scale(4);
 }
 
-button:hover div:after
+.header-button button:hover div:after
 {
     letter-spacing: 0;
     opacity: 1;
     transform: scale(1);
 }
 
-@media only screen and (max-width: 961px) {
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+// LEARN MORE BUTTON
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+.learn-button button div:before
+{
+    content: "LEARN MORE";
+}
+
+.learn-button button div:after {
+  content: "IT'S EASY";
+}
+
+
+
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+// BOTTOM IMAGES OF HEADER
+// //////////////////////////////////////////////////////////////////////////////////////////////////
+
+.header-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.header-left img {
+  // padding-top: 50px;
+  max-width: 100%;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.header-right img {
+  // padding-top: 50px;
+  max-width: 90%;
+}
+
+
+
+
+
+// DESKTOP
+@media only screen and (min-width: 961px) {
   
+.background {
+  height: auto;
+}
+
+.block {
+  flex-direction: row;
+}
+
+  .title {
+    font-size: 5rem;
+    padding-top: 12%;
+  }
+  .title h1 {
+    font-size:70px;
+  }
+
   .intro {
-    margin-bottom: 20%;
+    // background: red;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 100%;
+    margin-right: 30%;
+    margin-left: 30%;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .clicks {
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    // align svg image
+    margin-bottom: 150px;
+
+  }
+  .header-button {
+    width: 15%;
+    height: 50px;
+    // margin-bottom: 15px;
+  }
+  .header-button button div:before, .header-button button div:after {
+    font-size: 20px;
+    padding: 15px 0px;
+  }
+  .learn-button {
+    margin-left: 5%;
+  }
+
+  .header-left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .header-left img {
+    // padding-top: 50px;
+    max-width: 25vw;
+  }
+  .header-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  .header-right img {
+    // padding-top: 50px;
+    max-width: 25vw;
   }
 
 }

@@ -14,9 +14,7 @@
 .content {
     flex-grow: 1;
     background-color: white;
-    border: 1px solid #4F5D75;
-    // MATCHES WITH THE HEIGHT OF THE HEADER IN INDEX.JS
-    min-height: 70vh;
+    border: 2px solid red;
     width: 100%;
 }
 
