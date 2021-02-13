@@ -1,9 +1,8 @@
 import React from 'react'
 import Footer from '../components/footer' // (../) means go up one directory
 import NavBar from '../components/NavBar/Navbar'
-// import NavbarLinks from ".components/NavbarLinks"
+// import NavbarLinks from "../components/NavBar/NavbarLinks"
 import layoutStyles from './layout.module.scss'
-// import { Button } from "@freakycoder/react-native-button";
 
 function Layout(props){ // props is what's inside the layout tags.
     return(
