@@ -1,6 +1,6 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+// import { Link, useStaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
 import leftImage from "../images/photo-camera.svg"
 import rightImage from "../images/photo-jump.svg"
 import windows from "../images/windows.svg"
@@ -14,20 +14,20 @@ import "../styles/index.scss"
 
 function IndexPage(){
 
-  const data = useStaticQuery(graphql`
-  query {
-    allFile(filter: {extension: {regex: "/(svg)/"}, relativeDirectory: {eq: "images"}}) {
-      edges {
-        node {
-          id
-          publicURL
-          name
-          extension
-        }
-      }
-    }
-  }
-`)
+//   const data = useStaticQuery(graphql`
+//   query {
+//     allFile(filter: {extension: {regex: "/(svg)/"}, relativeDirectory: {eq: "images"}}) {
+//       edges {
+//         node {
+//           id
+//           publicURL
+//           name
+//           extension
+//         }
+//       }
+//     }
+//   }
+// `)
 
 
 
@@ -61,10 +61,10 @@ function IndexPage(){
                 </div>
                 <div className="header-images">
                   <div className="header-left">
-                    <img src={leftImage} alt="photo-camera"/>
+                    <img src={leftImage} alt="camera"/>
                   </div>
                   <div className="header-right">
-                    <img src={rightImage} alt="photo-jump"/>
+                    <img src={rightImage} alt="jump"/>
                   </div>
                 </div>
             </div>
@@ -73,16 +73,16 @@ function IndexPage(){
         <div className="banner">
           <h1>Supported on Mac OS and Windows</h1>
           <div className="banner-left">
-            <img src={apple} alt="photo-apple"/>
+            <img src={apple} alt="apple"/>
           </div>
           <div className="banner-right">
-            <img src={windows} alt="photo-windows"/>
+            <img src={windows} alt="windows"/>
           </div>
         </div>
 
         <div className="info-block">
           <div className="info-image">
-            <img src={folder} alt="photo-info"/>
+            <img src={folder} alt="info"/>
           </div>
           <div className="info-card">
               <h2>WHY VOLTO</h2>
