@@ -115,15 +115,16 @@
     .footer {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
     }
     .contact {
+        align-items: center;
         width: 25%;
         margin-top: 0;
     }
 
     .footer-info {
+        align-items: center;
         width: 25%;
     }
 }
