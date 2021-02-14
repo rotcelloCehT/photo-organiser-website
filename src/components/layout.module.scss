@@ -1,9 +1,10 @@
+@import "../styles/typography.css";
 // PAGE === BACKGROUND
 .page {
     background-color:#fff;
 }
-// CONTAINER === BODY
-.container {
+// MAIN-CONTAINER === BODY
+.main-container {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -12,6 +13,9 @@
 }
 
 .content {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
     flex-grow: 1;
     background-color: white;
     // border: 2px solid red;

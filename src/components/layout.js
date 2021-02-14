@@ -8,7 +8,7 @@ function Layout(props){ // props is what's inside the layout tags.
     return(
         <div className={layoutStyles.page}>
             <NavBar />
-            <div className={layoutStyles.container}>
+            <div className={layoutStyles.mainContainer}>
                 {/* USE CAMEL CASE IN JS FILE TO REFERENCE SCSS WITH "-" */}
                 <div className={layoutStyles.content}> 
                     {props.children}
