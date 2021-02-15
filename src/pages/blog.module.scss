@@ -60,7 +60,7 @@
     margin-bottom: 1rem;
 
     a {
-        background: #f4f4f4;
+        background: #bfbfe4;
         color: #000000;
         display: block;
         padding: 1rem;
@@ -84,7 +84,16 @@
     p {
         color: #777777;
         font-family: "Roboto";
-        font-size: .8rem;
+        font-size: 14px;
+        font-weight: 300;
         font-style: italic;
+    }
+}
+
+
+@media only screen and (min-width: 961px) {
+
+    .posts {
+        width: 750px;
     }
 }

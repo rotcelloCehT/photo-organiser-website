@@ -1,9 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { renderRichText } from "gatsby-source-contentful/rich-text"
+import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import Head from '../components/head'
 
 import Layout from '../components/layout'
+
 //  USED FOR MARKDOWNREMARK
 // 1.query done 2.slug var created 3.provideve slug as prop to component bellows
 // export const query = graphql` 
@@ -46,9 +48,9 @@ const Blog = (props) => {
         renderNode: {
             "embedded-asset-block": (node) => {
                 const alt = "test"
-                const url = props.data.contentfulBlogPost.body.references[0].fixed.src
+                const url = props.data.contentfulBlogPost.body.references[1].fixed.src
                 return (
-                <img src={url} alt={alt}/>
+                    <img src={url} alt={alt}/>
                 )
             }
         }

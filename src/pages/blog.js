@@ -34,7 +34,7 @@ function BlogPage(){
                 </div>
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map((edge) => { // array of objects mapped to JSX. function (edge) called on time for each object
-                        return( // this is hte jsx returns
+                        return( // this is the jsx return
                             <li className={blogStyles.post}>
                                 <Link to={`/blog/${edge.node.slug}`}>
                                     <h2>{edge.node.title}</h2>
