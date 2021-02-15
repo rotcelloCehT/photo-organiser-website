@@ -106,8 +106,10 @@
     width: 100%;
     padding: 10px;
     color: #fff;
-    background-color: #868686;
+    background-color: #C4C4FF;
+    font-size: 14px;
 }
+
 
 
 @media only screen and (min-width: 961px) {
@@ -126,5 +128,8 @@
     .footer-info {
         align-items: center;
         width: 25%;
+    }
+    .end {
+        padding-left: 20px;
     }
 }
