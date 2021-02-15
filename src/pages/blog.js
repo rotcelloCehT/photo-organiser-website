@@ -28,11 +28,13 @@ function BlogPage(){
         <div>
             <Layout>
             <Head title="Blog"/>
-                <h1>Blog</h1>
-                <hr></hr>
+              <div className={blogStyles.container}>
+                <div className={blogStyles.blogTitle}>
+                  <h1>Tutorials Blog</h1>
+                </div>
                 <ol className={blogStyles.posts}>
                     {data.allContentfulBlogPost.edges.map((edge) => { // array of objects mapped to JSX. function (edge) called on time for each object
-                        return( // this is hte jsx returneds
+                        return( // this is hte jsx returns
                             <li className={blogStyles.post}>
                                 <Link to={`/blog/${edge.node.slug}`}>
                                     <h2>{edge.node.title}</h2>
@@ -42,6 +44,8 @@ function BlogPage(){
                         )
                     })}
                 </ol>
+
+                </div>
             </Layout>
         </div>
     )

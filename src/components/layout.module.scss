@@ -1,20 +1,29 @@
+// IMPORT TYPOGRAPHY AND SET FONT-STYLE ACCORDING TO NAMING CONVENTION IN TYPOGRAPHY.CSS
 @import "../styles/typography.css";
+
 // PAGE === BACKGROUND
 .page {
     background-color:#fff;
 }
 // MAIN-CONTAINER === BODY
 .main-container {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    min-height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    min-height: 100vh;
+    
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Roboto';
-    font-style: italic;
     font-weight: 100;
     flex-grow: 1;
     background-color: white;
