@@ -47,7 +47,7 @@ const Blog = (props) => {
         renderNode: {
             "embedded-asset-block": (node) => {
                 const alt = "test"
-                const url = props.data.contentfulBlogPost.body.references[1].fixed.src
+                const url = props.data.contentfulBlogPost.body.references[0].fixed.src
                 return (
                     <img src={url} alt={alt}/>
                 )
