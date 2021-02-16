@@ -23,11 +23,11 @@ function Footer(){
             </div>
 
             <div className={footerStyles.footerInfo}>
-                <a href="/">About</a>
+                <a href="/blog">Blog</a>
             </div>
 
             <div className={footerStyles.footerInfo}>
-                <a href="/">Blog</a>
+                <a href="/about">About</a>
             </div>
             
             <div className={footerStyles.footerInfo}>

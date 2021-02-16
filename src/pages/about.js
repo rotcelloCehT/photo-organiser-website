@@ -3,14 +3,16 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout' // (../) means go up one directory
 import Head from '../components/head'
 
+import aboutStyles from './about.module.scss'
+
 function AboutPage(){
     return(
         <div>
             <Layout>
             <Head title="About"/>
-            <h1>About</h1>
-            <p>Blog website created using HTML, CSS, React and Gatsby</p>
-            <p>Need a developer? <Link to="/contact">Contact me.</Link></p> 
+            <h1 className={aboutStyles.about}>About</h1>
+            <p className={aboutStyles.info}>Blog website created using HTML, CSS, React and Gatsby</p>
+            <a className={aboutStyles.contact} href="mailto:anthonyradin123@gmail.com">Contact Me</a>
             </Layout>
         </div>
     )

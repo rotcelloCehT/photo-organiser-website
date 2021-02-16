@@ -1,4 +1,4 @@
-// IMPORT TYPOGRAPHY AND SET FONT-STYLE ACCORDING TO NAMING CONVENTION IN TYPOGRAPHY.CSS
+// // IMPORT TYPOGRAPHY AND SET FONT-STYLE ACCORDING TO NAMING CONVENTION IN TYPOGRAPHY.CSS
 @import "../styles/typography.css";
 
 // PAGE === BACKGROUND
@@ -23,12 +23,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Roboto';
     font-weight: 100;
-    flex-grow: 1;
+    // flex-grow: 1;
     background-color: white;
     // border: 2px solid red;
     width: 100%;
+    min-height: 100vh;
+    // FOR NAV
+    z-index: 1;
 }
 
 @media only screen and (min-width: 961px) {

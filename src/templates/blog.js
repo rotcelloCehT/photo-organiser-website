@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import Head from '../components/head'
 
 import Layout from '../components/layout'
